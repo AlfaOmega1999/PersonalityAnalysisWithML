@@ -81,3 +81,17 @@ header .banner-text hr {
   border-color: #2F2D2E;
   border-color: rgba(150, 150, 150, .1);
 }
+
+p .title{
+  align-content: center;
+  display: 'flex';
+  align-items: center;
+  color: blue;
+}
+
+p .text{
+  align-content: center;
+  display: 'flex';
+  align-items: center;
+  color: black;
+}
