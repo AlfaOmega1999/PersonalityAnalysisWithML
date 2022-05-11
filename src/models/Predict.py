@@ -24,16 +24,16 @@ import joblib
 import warnings
 warnings.filterwarnings("ignore")
 
-IE = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/IE.joblib")
-NS = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/NS.joblib")
-FT = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/FT.joblib")
-JP = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/JP.joblib")
+IE = joblib.load("models/IE.joblib")
+NS = joblib.load("models/NS.joblib")
+FT = joblib.load("models/FT.joblib")
+JP = joblib.load("models/JP.joblib")
 
 
 modelnames= [IE,NS,FT,JP]
 
 # MODELO FINAL
-data = pd.read_csv('C:/Users/luisf/Escritorio/TODO/FIB/TFG/ML/mbti_1.csv')
+data = pd.read_csv('data/raw/mbti_1.csv')
 
 lemmatiser = WordNetLemmatizer()
 
@@ -98,11 +98,7 @@ def pre_process_text(data, remove_stop_words=True, remove_mbti_profiles=True):
         list_personality.append(type_labelized)
         # Datos ya limpios
         list_posts.append(temp)
-        row[1].posts= temp
 
-    print("llego aqui")
-    data_processed = pd.DataFrame(data)
-    data_processed.to_csv("data_processed.csv", index=False)
 
     # Resultado
     list_posts = np.array(list_posts)

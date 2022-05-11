@@ -41,7 +41,7 @@ def translate_personality(personality):
     # transformar mbti a un vector binario
     return [b_Pers[l] for l in personality]
 
-data = pd.read_csv('C:/Users/luisf/Escritorio/TODO/FIB/TFG/ML/mbti_1.csv')
+data = pd.read_csv('data/raw/mbti_1.csv')
 def pre_process_text(data, remove_stop_words=True, remove_mbti_profiles=True):
     
     lemmatiser = WordNetLemmatizer()
@@ -86,13 +86,12 @@ def pre_process_text(data, remove_stop_words=True, remove_mbti_profiles=True):
         list_posts.append(temp)
         row[1].posts = temp
     dataP = pd.DataFrame(data)
-    dataP.to_csv("C:/Users/luisf/Escritorio/TODO/FIB/TFG/ML/dataP.csv", index=False)
+    dataP.to_csv("data/processed/dataP.csv", index=False)
     print(dataP)
 
     # Resultado
     list_posts = np.array(list_posts)
     list_personality = np.array(list_personality)
-    print("2")
     return list_posts, list_personality
 
 

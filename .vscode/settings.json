@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./ML/predictor",
-        "./ML/predictor"
-    ]
-}
