@@ -3,7 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
-import About from './pages/about';
+import Tipos from './pages/tipos';
+import Predictor from './pages/predictor';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home/>} />
-        <Route path='/about' element={<About/>} />
+        <Route path='/tipos' element={<Tipos/>} />
+        <Route path='/predictor' element={<Predictor/>} />
       </Routes>
     </Router>
   );

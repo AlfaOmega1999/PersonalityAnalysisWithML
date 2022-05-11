@@ -18,18 +18,18 @@ const Navbar = () => {
           </NavLink>
           <Bars />
           <NavMenu>
-              <NavLink to="/about" >
-                  About
+              <NavLink to="/tipos" >
+                  Tipos
               </NavLink>
-              <NavLink to="/services" >
-                  Services
+              <NavLink to="/predictor" >
+                  Predictor
               </NavLink>
               <NavLink to="/contact" >
                   Contact
               </NavLink>
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/signin">Button</NavBtnLink>
           </NavBtn>
       </Nav>
     </>

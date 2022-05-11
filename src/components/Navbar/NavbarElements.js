@@ -12,7 +12,14 @@ export const Nav = styled.nav`
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
-
+export const Nav2 = styled.nav`
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  /* Third Nav */
+  /* justify-content: flex-start; */
+`;
 export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
