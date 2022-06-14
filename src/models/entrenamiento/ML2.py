@@ -46,12 +46,13 @@ print(f'There are {nRow} rows and {nCol} columns')
 types = np.unique(np.array(data_set['type']))
 print(types)
 
-total = data_set.groupby(['type']).count()*50
+total = data_set.groupby(['type']).count()
 print(total)
 
 #visualizar el num de posts
 plt.figure(figsize = (12,4))
 plt.bar(np.array(total.index), height = total['posts'],)
+print(total['posts'])
 plt.xlabel('Tipos de personalidad', size = 14)
 plt.ylabel('No. de posts disponibles', size = 14)
 plt.title('Posts totales de cada personalidad')

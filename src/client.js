@@ -1,5 +1,5 @@
 import config from "./config"
-const axios = require("axios")  // 1
+const axios = require("axios") 
 
 
 class FastAPIClient {
@@ -9,22 +9,38 @@ class FastAPIClient {
 			...overrides,
 		}
 
-		this.apiClient = this.getApiClient(this.config)  // 2
+		this.apiClient = this.getApiClient(this.config) 
 	}
 
 	/* Create Axios client instance pointing at the REST api backend */
 	getApiClient(config) {
 		let initialConfig = {
-			baseURL: `${config.apiBasePath}`,  // 3
+			baseURL: `${config.apiBasePath}`,
 		}
 		let client = axios.create(initialConfig)
 		return client
 	}
 
 	getPrediction(msg) {
-		return this.apiClient.post(`/predict?msg=${msg}`).then(({data}) => {  // 5
+		return this.apiClient.get(`/predict?msg=${msg}`).then(({data}) => {  
 			return data
 		})
+	}
+
+	getAllStats() {
+		return this.apiClient.get(`/allstats`).then(({data}) => {  
+			return data
+		})
+	}
+
+	getTypeStats(type) {
+		return this.apiClient.get(`/typestats?type=${type}`).then(({data}) => {  
+			return data
+		})
+	}
+
+	updateDataset(new_type,msg) {
+		return this.apiClient.post(`/updatemodel?type=${new_type}&msg=${msg}`).then(({}) => {})
 	}
 }
 export default FastAPIClient;

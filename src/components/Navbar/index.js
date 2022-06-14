@@ -7,7 +7,7 @@ import {
     NavBtn,
     NavBtnLink
   } from './NavbarElements';
-  import logo from '../../images/MBTI.png';
+  import logo from '../../images/MBTILogo.png';
 
 const Navbar = () => {
   return (
@@ -19,17 +19,17 @@ const Navbar = () => {
           <Bars />
           <NavMenu>
               <NavLink to="/tipos" >
-                  Tipos
+                  Types
               </NavLink>
-              <NavLink to="/predictor" >
-                  Predictor
+              <NavLink to="/stats" >
+                  Stats
               </NavLink>
-              <NavLink to="/contact" >
-                  Contact
+              <NavLink to="/about" >
+                  About
               </NavLink>
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to="/signin">Button</NavBtnLink>
+              <NavBtnLink to="/predictor">Predictor</NavBtnLink>
           </NavBtn>
       </Nav>
     </>

@@ -1,10 +1,12 @@
 import React from 'react';
 import "../App.css";
-
+import "../style/types.css"
 const Tipos = () => {
   return (
-    <div class="conatiner">
-		<div class="wrap">
+	<header id="home">
+    
+    <div className="container">
+		<div className='wrap'>
 			<div class="box one">
 				<div class="front">
 					<h1>ISTJ</h1>
@@ -14,7 +16,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ISTJ</h2>
-						<p>Tranquilo, serio, gana el éxito por minuciosidad y confiabilidad. Práctico, realista y responsable. Decida lógicamente lo que se debe hacer y trabaja para lograrlo de manera constante, independientemente de las distracciones. Disfruta de hacer que todo esté ordenado y organizado: su trabajo, su hogar, su vida. Valorar las tradiciones y la lealtad.</p>
+						<p>Calm, serious, thorough, practical, realistic and responsible. Values traditions and loyalty. Decides logically what needs to be done and works to achieve it consistently, without distractions. Enjoys making everything tidy and organised: your work, your home, your life.</p>
 					</div>	
 			</div>
 			<div class="box two">
@@ -26,7 +28,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ISFJ</h2>
-						<p>Tranquilo, amable, responsable y concienzudo. Comprometido y constante en el cumplimiento de sus obligaciones. Concienzudo, meticuloso y preciso. Leales, considerados, notan y recuerdan detalles sobre las personas que son importantes para ellos, preocupados por cómo se sienten los demás. Esforzarse por crear un ambiente ordenado y armonioso en el trabajo y en el hogar.</p>
+						<p>Calm, friendly, responsible, meticulous, precise and conscientious. Committed and consistent in fulfilling their obligations. Loyal, considerate, noticing and remembering details about people who are important to them, concerned about how others feel. They strive to create an orderly and harmonious environment at work and at home.</p>
 					</div>	
 			</div>
 			<div class="box three">
@@ -38,7 +40,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>INFJ</h2>
-						<p>Buscar significado y conexión en ideas, relaciones y posesiones materiales. Quiere entender lo que motiva a las personas y es perspicaz acerca de los demás. Conscientes y comprometidos con sus firmes valores. Desarrollar una visión clara sobre la mejor manera de servir al bien común. Organizados y resolutivos en la implementación de su visión.</p>
+						<p>They tend to look for meaning and connection in ideas, relationships and material possessions. Wants to understand what motivates people and is insightful about others. Conscientious and committed to their values. They develop a clear vision of how best to serve the common good. Organised and decisive in implementing their vision.</p>
 					</div>	
 			</div>
 			<div class="box four">
@@ -50,7 +52,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>INTJ</h2>
-						<p>Tener mentes originales y gran empuje para implementar sus ideas y lograr sus objetivos. Ve rápidamente patrones en eventos externos y desarrolla perspectivas explicativas de largo alcance. Cuando está comprometido, organiza un trabajo y lo lleva a cabo. Escépticos e independientes, tienen altos estándares de competencia y desempeño, para ellos mismos y para los demás.</p>
+						<p>They tend to have original minds and great drive to implement their ideas and achieve their goals. They are quick to see patterns in external events and develop far-reaching explanatory perspectives. When committed, they organise a job and see it through. Sceptical and independent, they have high standards of competence and performance, for themselves and others.</p>
 					</div>	
 			</div>
 			<div class="box five">
@@ -62,7 +64,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ISTP</h2>
-						<p>Tolerantes y flexibles, observadores silenciosos hasta que aparece un problema, luego actúan rápidamente para encontrar soluciones viables. Analiza lo que hace que las cosas funcionen y obtiene fácilmente grandes cantidades de datos para aislar el núcleo de los problemas prácticos. Interesado en causa y efecto, organiza hechos utilizando principios lógicos, valora la eficiencia.</p>
+						<p>Tolerant and flexible, silent observers until a problem arises, then act quickly to find workable solutions. Analyses what makes things work. Organises facts using logical principles and values efficiency.</p>
 					</div>	
 			</div>
 			<div class="box six">
@@ -74,7 +76,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ISFP</h2>
-						<p>Tranquilo, amable, sensible y amable. Disfruta del momento presente, de lo que sucede a su alrededor. Les gusta tener su propio espacio y trabajar dentro de su propio marco de tiempo. Leales y comprometidos con sus valores y con las personas que son importantes para ellos. No le gustan los desacuerdos y los conflictos, no impone sus opiniones o valores a los demás.</p>
+						<p>Calm, kind and sensitive. They enjoy the present moment, what is happening around them. They like to have their own space and work within their own time frame. Loyal and committed to their values and to the people who are important to them. They dislike disagreements and conflicts and do not impose their opinions or values on others.</p>
 					</div>	
 			</div>
 			<div class="box seven">
@@ -86,7 +88,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>INFP</h2>
-						Idealista, leal a sus valores ya las personas que son importantes para él. Quieren una vida externa que sea congruente con sus valores. Curioso, rápido para ver posibilidades, puede ser un catalizador para implementar ideas. Busca comprender a las personas y ayudarlas a alcanzar su potencial. Adaptable, flexible y tolerante a menos que un valor se vea amenazado.
+						<p>Idealistic, curious and loyal to their values and to the people who are important to them. They want an external life that is congruent with their values. Seeks to understand people and help them reach their potential. Adaptable, flexible and tolerant unless one of their values is threatened.</p>
 					</div>	
 			</div>
 			<div class="box eight">
@@ -98,7 +100,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>INTP</h2>
-						<p>Buscan desarrollar explicaciones lógicas para todo lo que les interesa. Teórico y abstracto, interesado más en las ideas que en la interacción social. Tranquilo, contenido, flexible y adaptable. Tener una habilidad inusual para enfocarse en profundidad para resolver problemas en su área de interés. Escéptico, a veces crítico, siempre analítico.</p>
+						<p>They seek to develop logical explanations for everything that interests them. Theoretical and abstract, interested more in ideas than in social interaction. Calm, content, flexible and adaptable. They have an unusual ability to focus in depth to solve problems in their area of interest. Sceptical, sometimes critical, and always analytical.</p>					
 					</div>	
 			</div>
 			<div class="box nine">
@@ -110,7 +112,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ESTP</h2>
-						<p>Flexibles y tolerantes, adoptan un enfoque pragmático centrado en resultados inmediatos. Las teorías y las explicaciones conceptuales los aburren, quieren actuar enérgicamente para resolver el problema. Se concentra en el aquí y ahora, espontáneo, disfruta cada momento que puede estar activo con los demás. Disfruta de las comodidades materiales y el estilo. Aprende mejor haciendo.</p>
+						<p>Flexible and tolerant, they adopt a pragmatic approach focused on immediate results. Theories and conceptual explanations bore them, they want to act energetically to solve the problem. They concentrate on the here and now, spontaneous, enjoy every moment they can be active with others. They enjoy material comforts and style. They learn best by doing.</p>					
 					</div>	
 			</div>
 			<div class="box ten">
@@ -122,7 +124,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ESFP</h2>
-						<p>Extrovertida, amable y tolerante. Amantes exuberantes de la vida, las personas y las comodidades materiales. Disfruta trabajar con otros para hacer que las cosas sucedan. Aporta sentido común y un enfoque realista a su trabajo, y hace que el trabajo sea divertido. Flexible y espontáneo, se adapta fácilmente a nuevas personas y entornos. Aprende mejor probando una nueva habilidad con otras personas.</p>
+						<p>Extroverted, friendly and tolerant. Lovers of life, people and material comforts. Enjoys working with others to make things happen. You bring common sense and a down-to-earth approach to your work, and make work fun. Flexible and spontaneous, you adapt easily to new people and environments. You learn best by trying out a new skill with others.</p>					
 					</div>	
 			</div>
 			<div class="box eleven">
@@ -134,7 +136,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ENFP</h2>
-						<p>Cálidamente entusiasta e imaginativo. Ve la vida como llena de posibilidades. Hace conexiones entre eventos e información muy rápidamente y procede con confianza en función de los patrones que ve. Quiere mucha afirmación de los demás, y está dispuesto a dar aprecio y apoyo. Espontáneos y flexibles, suelen confiar en su capacidad de improvisación y en su fluidez verbal.</p>
+						<p>Enthusiastic and imaginative. You make connections between events and information very quickly and proceed with confidence based on the patterns you see. They want a lot of affirmation from others, and are willing to give appreciation and support. Spontaneous and flexible, they tend to rely on their ability to improvise and their verbal fluency.</p>					
 					</div>	
 			</div>
 			<div class="box tlv">
@@ -146,7 +148,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ENTP</h2>
-						<p>Rápido, ingenioso, estimulante, alerta y franco. Ingenioso para resolver problemas nuevos y desafiantes. Experto en generar posibilidades conceptuales y luego analizarlas estratégicamente. Bueno para leer a otras personas. Aburrido por la rutina, rara vez hará lo mismo de la misma manera, propenso a volverse hacia un nuevo interés tras otro.</p>
+						<p>Quick, resourceful and sincere. Expert at generating conceptual possibilities and then analysing them strategically. Good at reading other people. Bored with routine, rarely will do the same thing in the same way, prone to change interests.</p>					
 					</div>	
 			</div>
 			<div class="box thirteen">
@@ -158,7 +160,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ESTJ</h2>
-						<p>Práctico, realista. Decisivo, moverse rápidamente para implementar decisiones. Organiza proyectos y personas para hacer las cosas, se enfoca en obtener resultados de la manera más eficiente posible. Cuida los detalles de la rutina. Tener un conjunto claro de estándares lógicos, seguirlos sistemáticamente y querer que otros también lo hagan. Contundente en la ejecución de sus planes.</p>
+						<p>Practical, realistic and decisive. They like to organise projects and people to get things done, they focus on getting results in the most efficient way possible. They take care of routine details. They have a clear set of logical standards, follow them systematically and want others to do so too. Strong in the execution of their plans.</p>					
 					</div>	
 			</div>
 			<div class="box ftn">
@@ -170,7 +172,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ESFJ</h2>
-						<p>Cariñoso, concienzudo y cooperativo. Quieren armonía en su entorno, trabajan con determinación para establecerla. Me gusta trabajar con otros para completar las tareas con precisión y a tiempo. Leal, sigue hasta en los asuntos pequeños. Se fija en lo que los demás necesitan en su día a día y trata de proporcionárselo. Quieren ser apreciados por lo que son y por lo que aportan.</p>
+						<p>Caring, conscientious and cooperative. They want harmony in their environment and work with determination to establish it. They like to work with others to complete tasks accurately and on time. They look at what others need in their daily lives and try to provide it. They want to be appreciated for who they are and what they contribute.</p>					
 					</div>	
 			</div>
 			<div class="box fith">
@@ -182,7 +184,7 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ENFJ</h2>
-						<p>Cálido, empático, receptivo y responsable. Muy en sintonía con las emociones, necesidades y motivaciones de los demás. Encuentra potencial en todos, quiera ayudar a otros a alcanzar su potencial. Pueden actuar como catalizadores para el crecimiento individual y grupal. Leal, sensible a los elogios y las críticas. Sociable, facilita a otros en un grupo y proporciona un liderazgo inspirador.</p>
+						<p>Warm, sociable, empathetic, responsive and responsible. Very attuned to the emotions, needs and motivations of others. They find potential in everyone; they want to help others reach their potential. They can act as catalysts for individual and group growth. Sensitive to praise and criticism.</p>					
 					</div>	
 			</div>
 			<div class="box sith">
@@ -194,12 +196,13 @@ const Tipos = () => {
 				</div>	
 				<div class="back">
 						<h2>ENTJ</h2>
-						<p>Asume el liderazgo con facilidad.Desarrolla e implementa sistemas integrales para resolver problemas organizacionales. Disfruta de la planificación a largo plazo y el establecimiento de metas. Suelen estar bien informados, leer bien, disfrutar ampliando sus conocimientos y transmitiéndolos a otros. Contundente en la exposición de sus ideas.</p>
+						<p>They are honest, decisive and tend to assume leadership with ease. They are quick to see illogical and inefficient procedures and policies and try to resolve them. They enjoy long-term planning and goal setting. They tend to be well-informed and enjoy expanding their knowledge and passing it on to others. They are forceful in the presentation of their ideas.</p>					
 					</div>	
 			</div>
-	
+
+	</div>
 </div>
-</div>
+</header>
   );
 };
 

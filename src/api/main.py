@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-import joblib
 
 # Analisis de datos
 import pandas as pd
@@ -14,15 +13,31 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
+from fastapi.middleware.cors import CORSMiddleware
 # Guardar modelo
 import joblib
 
 app = FastAPI()
 
-IE = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/IE.joblib")
-NS = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/NS.joblib")
-FT = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/FT.joblib")
-JP = joblib.load("D:/TODO/FIB/TFG/PersonalityAnalysisWithML/api/JP.joblib")
+origins = [
+    "http://localhost:3000",
+    "https://prediction-fastapi.herokuapp.com/",
+    "http://127.0.0.1:8000",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+IE = joblib.load("../../models/IE.joblib")
+NS = joblib.load("../../models/NS.joblib")
+FT = joblib.load("../../models/FT.joblib")
+JP = joblib.load("../../models/JP.joblib")
 
 list_personality = []
 list_posts = []
