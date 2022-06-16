@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import FastAPIClient from 'C:/Users/luisf/Escritorio/PersonalityAnalysisWithML/src/client.js';
-import config from 'C:/Users/luisf/Escritorio/PersonalityAnalysisWithML/src/config.js';
+import FastAPIClient from '../client.js';
+import config from '../config.js';
 import 'chart.js/auto';
 import {Pie} from 'react-chartjs-2';
 import "../style/stats.css"
